@@ -1,0 +1,78 @@
+# 灌水判定ロジックの閾値・係数定義
+# auto-irrigation-demo-spec.md 「1.4 灌水判定ロジック詳細」に対応
+# コーディング規約により、閾値・係数はコードに直書きせずこのファイルに集約する。
+
+soil_moisture:
+  thresholds:
+    - max_pct: 20
+      label: critical
+      score: 1.0
+    - max_pct: 40
+      label: needs_irrigation
+      score: 0.75
+    - max_pct: 60
+      label: adequate
+      score: 0.0
+    - max_pct: 80
+      label: too_wet
+      score: 0.0
+    - max_pct: 100
+      label: waterlogged
+      score: 0.0
+
+weather:
+  rain_today_threshold_mm: 10
+  rain_today_coefficient: 0.0
+  forecast_rain_threshold_mm: 5
+  forecast_rain_coefficient: 0.3
+  hot_temperature_threshold_c: 35
+  hot_humidity_threshold_pct: 40
+  hot_dry_coefficient: 1.5
+  cold_temperature_threshold_c: 5
+  cold_coefficient: 0.4
+  high_humidity_threshold_pct: 80
+  high_humidity_coefficient: 0.6
+  default_coefficient: 1.0
+
+decision:
+  # total_score以上の最初の(スコアが高い順の)エントリを採用する
+  levels:
+    - key: immediate
+      min_score: 0.7
+    - key: recommended
+      min_score: 0.4
+    - key: watch
+      min_score: 0.2
+    - key: none
+      min_score: 0.0
+
+water_volume_l_per_m2:
+  immediate:
+    sandy_loam: 5
+    loam: 4
+    clay: 3
+  recommended:
+    sandy_loam: 3
+    loam: 2.5
+    clay: 2
+  watch:
+    sandy_loam: 1
+    loam: 1
+    clay: 0.5
+  none:
+    sandy_loam: 0
+    loam: 0
+    clay: 0
+
+schedule:
+  hot_afternoon_start_hour: 10
+  hot_afternoon_end_hour: 16
+  hot_afternoon_temperature_threshold_c: 30
+  hot_afternoon_recommended_hour: 17
+  night_start_hour: 22
+  night_end_hour: 5
+  next_morning_start_hour: 6
+  next_morning_end_hour: 8
+
+daily_reset:
+  reset_hour_jst: 3
