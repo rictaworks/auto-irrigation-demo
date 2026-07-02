@@ -135,5 +135,13 @@
     "ru": "Русский",
     "es": "Español",
     "ar": "العربية"
+  },
+  "scaffold": {
+    "pageTitle": "自动灌溉演示",
+    "demoBanner": "⚠️ 这是演示版本。服务器重启时数据可能会被重置。",
+    "backToList": "← 演示列表",
+    "consultCta": "联系我们",
+    "footerLegal": "使用条款 / 免责声明 / 联系方式",
+    "footerCopyright": "© 2026 Ricta Works"
   }
 }

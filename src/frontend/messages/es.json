@@ -135,5 +135,13 @@
     "ru": "Русский",
     "es": "Español",
     "ar": "العربية"
+  },
+  "scaffold": {
+    "pageTitle": "Demo de riego automático",
+    "demoBanner": "⚠️ Esto es una demo. Los datos pueden restablecerse cuando el servidor se reinicie.",
+    "backToList": "← Lista de demos",
+    "consultCta": "Contáctenos",
+    "footerLegal": "Términos / Aviso legal / Contacto",
+    "footerCopyright": "© 2026 Ricta Works"
   }
 }

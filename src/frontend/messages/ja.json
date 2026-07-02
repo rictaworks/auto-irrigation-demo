@@ -135,5 +135,13 @@
     "ru": "Русский",
     "es": "Español",
     "ar": "العربية"
+  },
+  "scaffold": {
+    "pageTitle": "自動灌水デモ",
+    "demoBanner": "⚠️ これはデモ版です。データはサーバー再起動時にリセットされる場合があります。",
+    "backToList": "← デモ一覧へ",
+    "consultCta": "ご相談はこちら",
+    "footerLegal": "利用規約・免責事項・連絡先",
+    "footerCopyright": "© 2026 Ricta Works"
   }
 }

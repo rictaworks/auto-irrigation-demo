@@ -17,6 +17,7 @@ const NAV_ITEMS = [
 export function Nav() {
   const t = useTranslations("nav");
   const appT = useTranslations("app");
+  const scaffoldT = useTranslations("scaffold");
   const pathname = usePathname();
 
   return (
@@ -29,7 +30,21 @@ export function Nav() {
           </Link>
         ))}
       </nav>
-      <LocaleSwitcher />
+      <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        <a
+          href="https://rictaworks.jp/#demos"
+          style={{
+            color: "var(--color-text-light)",
+            fontSize: "13px",
+            textDecoration: "none",
+            paddingRight: "12px",
+            borderRight: "1px solid var(--color-border)",
+          }}
+        >
+          {scaffoldT("backToList")}
+        </a>
+        <LocaleSwitcher />
+      </div>
     </header>
   );
 }

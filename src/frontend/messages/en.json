@@ -135,5 +135,13 @@
     "ru": "Русский",
     "es": "Español",
     "ar": "العربية"
+  },
+  "scaffold": {
+    "pageTitle": "Auto-Irrigation Demo",
+    "demoBanner": "⚠️ This is a demo. Data may be reset when the server restarts.",
+    "backToList": "← Demo List",
+    "consultCta": "Contact Us",
+    "footerLegal": "Terms / Disclaimer / Contact",
+    "footerCopyright": "© 2026 Ricta Works"
   }
 }
