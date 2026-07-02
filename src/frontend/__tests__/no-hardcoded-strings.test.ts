@@ -5,13 +5,25 @@ import ts from "typescript";
 // UI表示文言をコードに直書きしないためのコンプライアンステスト（coding-style.md）。
 // src/ 配下の.ts/.tsxの文字列リテラル・JSXテキスト(コメントは除く)に
 // 日本語が含まれていないか静的に検査する。翻訳リソースは messages/*.json に分離する。
+//
+// 除外: app/legal/ は会社情報・規約の法的文書であり、
+//       日本語テキストのハードコードが正当な例外として認められる。
 const JAPANESE_CHAR_PATTERN = /[ぁ-んァ-ヶ一-龠]/;
 const SRC_DIR = path.join(__dirname, "..", "src");
+
+// 除外ディレクトリ（相対パス、OS 非依存）
+const EXCLUDE_DIRS = ["app/legal"];
 
 function collectSourceFiles(dir: string): string[] {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) return collectSourceFiles(fullPath);
+    if (entry.isDirectory()) {
+      const relFromSrc = path.relative(SRC_DIR, fullPath).replace(/\\/g, "/");
+      if (EXCLUDE_DIRS.some((ex) => relFromSrc === ex || relFromSrc.startsWith(ex + "/"))) {
+        return [];
+      }
+      return collectSourceFiles(fullPath);
+    }
     if (/\.(ts|tsx)$/.test(entry.name)) return [fullPath];
     return [];
   });
