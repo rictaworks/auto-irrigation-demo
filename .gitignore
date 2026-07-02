@@ -1,0 +1,38 @@
+# プロジェクト管理用ディレクトリ（README.md / CLAUDE.md / SPEC/ 以外）
+.claude/
+CLIENT/
+DEBUG/
+DELETE/
+ENV/
+TASKS/
+WORK/
+app-ui/
+auto-irrigation-demo-spec.md
+
+# シークレット
+.env
+.env.*
+!.env.example
+config/master.key
+config/credentials/*.key
+
+# Next.js
+node_modules/
+.next/
+out/
+.vercel/
+
+# Rails
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+/db/*.sqlite3
+/db/*.sqlite3-journal
+.bundle/
+vendor/bundle/
+/public/assets
+/public/packs
+
+# OS
+.DS_Store
