@@ -2,11 +2,11 @@
 
 土壌・天気データ連動の自動灌水システム（デモ版）。詳細設計は [auto-irrigation-demo-spec.md](./auto-irrigation-demo-spec.md) を参照。
 
-> 現時点では設計フェーズであり、Next.js/Railsの実装は未着手。以下のページ一覧・API一覧は設計書に基づく実装予定の内容。実装後は本README（および `SPEC/API.md`）を実際のルーティングに合わせて更新すること。
+`src/backend`（Rails API mode + SQLite）、`src/frontend`（Next.js App Router）で実装済み。
 
 ## 自動ログイン
 
-このデモは認証を持たない。ページアクセス時にCookieのセッション（UUID v4）が無ければサーバー側で自動発行し、以降そのセッションIDをオーナーキーとして全データを紐付ける（`GET /api/session`）。ID/パスワード等の入力は不要（外部認証API禁止のため、Google OAuth等は使用しない）。
+このデモは認証を持たない。ページアクセス時にCookieのセッション（UUID v4、署名付き・HttpOnly・SameSite=Strict）が無ければサーバー側で自動発行し、以降そのセッションIDをオーナーキーとして全データを紐付ける（`GET /api/session`）。ID/パスワード等の入力は不要（外部認証API禁止のため、Google OAuth等は使用しない）。
 
 ## ページ一覧
 
@@ -24,10 +24,27 @@
 | タイトル | エンドポイントURL |
 |---|---|
 | セッション確認・自動発行 | [`GET /api/session`](./SPEC/API.md) |
+| 圃場設定取得 | [`GET /api/field_settings`](./SPEC/API.md) |
+| 圃場設定登録 | [`POST /api/field_settings`](./SPEC/API.md) |
 | センサーデータ送信・灌水判定 | [`POST /api/sensor`](./SPEC/API.md) |
 | 灌水実行記録 | [`POST /api/irrigate`](./SPEC/API.md) |
-| 圃場設定登録 | [`POST /api/field_settings`](./SPEC/API.md) |
 | 灌水履歴取得 | [`GET /api/irrigation_logs`](./SPEC/API.md) |
+
+## ローカル起動
+
+```bash
+# バックエンド (http://localhost:3001)
+cd src/backend
+cp .env.example .env   # FRONTEND_ORIGIN等を設定
+bin/rails db:prepare
+bin/rails server -p 3001
+
+# フロントエンド (http://localhost:3000)
+cd src/frontend
+cp .env.example .env.local   # NEXT_PUBLIC_API_BASE_URL等を設定
+npm install
+npm run dev
+```
 
 ## 開発ルール
 

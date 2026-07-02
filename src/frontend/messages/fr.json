@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "Système de gestion de l'irrigation",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "sensor": "Saisie des capteurs",
+    "settings": "Paramètres du champ",
+    "history": "Historique d'irrigation"
+  },
+  "common": {
+    "save": "Enregistrer les paramètres",
+    "cancel": "Annuler",
+    "submit": "Lancer l'évaluation",
+    "loading": "Chargement...",
+    "close": "Fermer",
+    "confirm": "Confirmer"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "soilMoisture": "Humidité du sol",
+    "soilScore": "Score du sol",
+    "weatherCoefficient": "Coefficient météo",
+    "weatherCondition": "Condition météo",
+    "decisionLabel": "Décision d'irrigation",
+    "totalScore": "Score total",
+    "weatherGrid": {
+      "temperature": "Température",
+      "humidity": "Humidité",
+      "rainfallToday": "Pluie du jour",
+      "forecastRain": "Pluie prévue (24 h)"
+    },
+    "recommendedAction": {
+      "title": "Action recommandée",
+      "volume": "Volume total recommandé",
+      "unitVolume": "Volume par m²",
+      "area": "Surface du champ",
+      "soilType": "Type de sol",
+      "lastUpdated": "Dernière mise à jour"
+    },
+    "buttons": {
+      "updateSensor": "Mettre à jour le capteur",
+      "recordIrrigation": "Enregistrer l'irrigation"
+    },
+    "emptyState": {
+      "message": "Aucune donnée de capteur n'a encore été saisie",
+      "cta": "Aller à la saisie des capteurs"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "Irriguer maintenant",
+    "recommended": "Irrigation recommandée",
+    "watch": "À surveiller",
+    "none": "Irrigation non nécessaire"
+  },
+  "soilLabels": {
+    "critical": "Critique (proche de la sécheresse)",
+    "needs_irrigation": "Irrigation nécessaire",
+    "adequate": "Adéquat",
+    "too_wet": "Légèrement trop humide",
+    "waterlogged": "Détrempé (risque de pourriture des racines)"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "Pluie en cours - irrigation inutile",
+    "forecast_rain_over_threshold": "Pluie prévue - irrigation à reporter",
+    "hot_and_dry": "Chaud et sec - évaporation accrue",
+    "cold": "Froid - évaporation réduite",
+    "high_humidity": "Humidité élevée - évaporation limitée",
+    "standard": "Conditions standards"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "Attendre le soir (17h00) - risque de brûlure des feuilles",
+    "emergency_confirm": "Mode irrigation d'urgence",
+    "execute_now": "Exécuter maintenant",
+    "next_morning": "Recommandé entre 6h00 et 8h00 demain matin",
+    "reevaluate_tomorrow": "Réévaluer demain matin",
+    "skip": "Ignorer"
+  },
+  "soilTypes": {
+    "sandy_loam": "Limon sableux",
+    "loam": "Limon",
+    "clay": "Argile"
+  },
+  "sensorForm": {
+    "title": "Saisie des capteurs",
+    "soilMoisturePct": "Humidité du sol (%)",
+    "rainfallTodayMm": "Pluie du jour (mm)",
+    "forecastRainMm": "Pluie prévue sur 24 h (mm)",
+    "temperatureC": "Température (°C)",
+    "humidityPct": "Humidité (%)",
+    "submit": "Lancer l'évaluation",
+    "cancel": "Annuler",
+    "success": "Évaluation terminée"
+  },
+  "settingsForm": {
+    "title": "Paramètres du champ",
+    "areaM2": "Surface du champ (m²)",
+    "soilType": "Type de sol",
+    "save": "Enregistrer les paramètres",
+    "cancel": "Annuler",
+    "success": "Paramètres enregistrés"
+  },
+  "history": {
+    "title": "Historique d'irrigation",
+    "columns": {
+      "executedAt": "Date/Heure",
+      "decision": "Décision",
+      "soilMoisture": "Humidité du sol",
+      "score": "Score",
+      "volume": "Volume recommandé",
+      "action": "Action"
+    },
+    "empty": "Aucun enregistrement d'irrigation pour le moment"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "Mode irrigation d'urgence",
+      "body": "Il est actuellement la nuit (22h00-5h00). Voulez-vous vraiment irriguer maintenant ?"
+    }
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite. Veuillez réessayer.",
+    "network": "Impossible de se connecter au serveur.",
+    "validation": "Veuillez vérifier votre saisie."
+  },
+  "localeSwitcher": {
+    "label": "Langue"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

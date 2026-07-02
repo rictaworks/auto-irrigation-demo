@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "Система управления поливом",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "Панель управления",
+    "sensor": "Ввод данных датчика",
+    "settings": "Настройки поля",
+    "history": "История полива"
+  },
+  "common": {
+    "save": "Сохранить настройки",
+    "cancel": "Отмена",
+    "submit": "Выполнить оценку",
+    "loading": "Загрузка...",
+    "close": "Закрыть",
+    "confirm": "Подтвердить"
+  },
+  "dashboard": {
+    "title": "Панель управления",
+    "soilMoisture": "Влажность почвы",
+    "soilScore": "Балл почвы",
+    "weatherCoefficient": "Коэффициент погоды",
+    "weatherCondition": "Погодные условия",
+    "decisionLabel": "Решение о поливе",
+    "totalScore": "Общий балл",
+    "weatherGrid": {
+      "temperature": "Температура",
+      "humidity": "Влажность воздуха",
+      "rainfallToday": "Осадки за сегодня",
+      "forecastRain": "Прогноз осадков (24 ч)"
+    },
+    "recommendedAction": {
+      "title": "Рекомендуемое действие",
+      "volume": "Рекомендуемый общий объём воды",
+      "unitVolume": "Объём на м²",
+      "area": "Площадь поля",
+      "soilType": "Тип почвы",
+      "lastUpdated": "Последнее обновление"
+    },
+    "buttons": {
+      "updateSensor": "Обновить данные датчика",
+      "recordIrrigation": "Записать полив"
+    },
+    "emptyState": {
+      "message": "Данные с датчика ещё не введены",
+      "cta": "Перейти к вводу данных датчика"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "Полить немедленно",
+    "recommended": "Полив рекомендуется",
+    "watch": "Наблюдение",
+    "none": "Полив не требуется"
+  },
+  "soilLabels": {
+    "critical": "Критично (на грани засухи)",
+    "needs_irrigation": "Требуется полив",
+    "adequate": "В норме",
+    "too_wet": "Немного переувлажнено",
+    "waterlogged": "Переувлажнено (риск загнивания корней)"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "Идёт дождь - полив не требуется",
+    "forecast_rain_over_threshold": "Прогнозируется дождь - отложить полив",
+    "hot_and_dry": "Жарко и сухо - усиленное испарение",
+    "cold": "Холодно - пониженное испарение",
+    "high_humidity": "Высокая влажность - испарение подавлено",
+    "standard": "Стандартные условия"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "Подождать до вечера (17:00) - риск ожога листьев",
+    "emergency_confirm": "Режим экстренного полива",
+    "execute_now": "Выполнить сейчас",
+    "next_morning": "Рекомендуется завтра с 6:00 до 8:00",
+    "reevaluate_tomorrow": "Повторно оценить завтра утром",
+    "skip": "Пропустить"
+  },
+  "soilTypes": {
+    "sandy_loam": "Супесчаная почва",
+    "loam": "Суглинок",
+    "clay": "Глинистая почва"
+  },
+  "sensorForm": {
+    "title": "Ввод данных датчика",
+    "soilMoisturePct": "Влажность почвы (%)",
+    "rainfallTodayMm": "Осадки за сегодня (мм)",
+    "forecastRainMm": "Прогноз осадков за 24 ч (мм)",
+    "temperatureC": "Температура (°C)",
+    "humidityPct": "Влажность воздуха (%)",
+    "submit": "Выполнить оценку",
+    "cancel": "Отмена",
+    "success": "Оценка завершена"
+  },
+  "settingsForm": {
+    "title": "Настройки поля",
+    "areaM2": "Площадь поля (м²)",
+    "soilType": "Тип почвы",
+    "save": "Сохранить настройки",
+    "cancel": "Отмена",
+    "success": "Настройки сохранены"
+  },
+  "history": {
+    "title": "История полива",
+    "columns": {
+      "executedAt": "Дата/время",
+      "decision": "Решение",
+      "soilMoisture": "Влажность почвы",
+      "score": "Балл",
+      "volume": "Рекомендуемый объём",
+      "action": "Действие"
+    },
+    "empty": "Записей о поливе пока нет"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "Режим экстренного полива",
+      "body": "Сейчас ночное время (22:00-5:00). Вы уверены, что хотите начать полив прямо сейчас?"
+    }
+  },
+  "errors": {
+    "generic": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
+    "network": "Не удалось подключиться к серверу.",
+    "validation": "Пожалуйста, проверьте введённые данные."
+  },
+  "localeSwitcher": {
+    "label": "Язык"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

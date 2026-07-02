@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "Sistema de gestión de riego",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "Panel de control",
+    "sensor": "Entrada de sensores",
+    "settings": "Configuración del campo",
+    "history": "Historial de riego"
+  },
+  "common": {
+    "save": "Guardar configuración",
+    "cancel": "Cancelar",
+    "submit": "Ejecutar evaluación",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "confirm": "Confirmar"
+  },
+  "dashboard": {
+    "title": "Panel de control",
+    "soilMoisture": "Humedad del suelo",
+    "soilScore": "Puntuación del suelo",
+    "weatherCoefficient": "Coeficiente climático",
+    "weatherCondition": "Condición climática",
+    "decisionLabel": "Decisión de riego",
+    "totalScore": "Puntuación total",
+    "weatherGrid": {
+      "temperature": "Temperatura",
+      "humidity": "Humedad",
+      "rainfallToday": "Lluvia de hoy",
+      "forecastRain": "Pronóstico de lluvia (24 h)"
+    },
+    "recommendedAction": {
+      "title": "Acción recomendada",
+      "volume": "Volumen total recomendado",
+      "unitVolume": "Volumen por m²",
+      "area": "Superficie del campo",
+      "soilType": "Tipo de suelo",
+      "lastUpdated": "Última actualización"
+    },
+    "buttons": {
+      "updateSensor": "Actualizar sensor",
+      "recordIrrigation": "Registrar riego"
+    },
+    "emptyState": {
+      "message": "Todavía no se han introducido datos del sensor",
+      "cta": "Ir a la entrada de sensores"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "Regar ahora",
+    "recommended": "Riego recomendado",
+    "watch": "En observación",
+    "none": "No es necesario regar"
+  },
+  "soilLabels": {
+    "critical": "Crítico (casi en sequía)",
+    "needs_irrigation": "Necesita riego",
+    "adequate": "Adecuado",
+    "too_wet": "Ligeramente encharcado",
+    "waterlogged": "Encharcado (riesgo de pudrición de raíces)"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "Está lloviendo - riego innecesario",
+    "forecast_rain_over_threshold": "Se pronostica lluvia - posponer el riego",
+    "hot_and_dry": "Calor y sequedad - mayor evaporación",
+    "cold": "Frío - menor evaporación",
+    "high_humidity": "Humedad alta - evaporación reducida",
+    "standard": "Condiciones estándar"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "Esperar hasta la tarde (17:00) - riesgo de quemadura foliar",
+    "emergency_confirm": "Modo de riego de emergencia",
+    "execute_now": "Ejecutar ahora",
+    "next_morning": "Se recomienda entre las 6:00 y las 8:00 de mañana",
+    "reevaluate_tomorrow": "Reevaluar mañana por la mañana",
+    "skip": "Omitir"
+  },
+  "soilTypes": {
+    "sandy_loam": "Marga arenosa",
+    "loam": "Marga",
+    "clay": "Arcilla"
+  },
+  "sensorForm": {
+    "title": "Entrada de sensores",
+    "soilMoisturePct": "Humedad del suelo (%)",
+    "rainfallTodayMm": "Lluvia de hoy (mm)",
+    "forecastRainMm": "Pronóstico de lluvia 24 h (mm)",
+    "temperatureC": "Temperatura (°C)",
+    "humidityPct": "Humedad (%)",
+    "submit": "Ejecutar evaluación",
+    "cancel": "Cancelar",
+    "success": "Evaluación completada"
+  },
+  "settingsForm": {
+    "title": "Configuración del campo",
+    "areaM2": "Superficie del campo (m²)",
+    "soilType": "Tipo de suelo",
+    "save": "Guardar configuración",
+    "cancel": "Cancelar",
+    "success": "Configuración guardada"
+  },
+  "history": {
+    "title": "Historial de riego",
+    "columns": {
+      "executedAt": "Fecha/hora",
+      "decision": "Decisión",
+      "soilMoisture": "Humedad del suelo",
+      "score": "Puntuación",
+      "volume": "Volumen recomendado",
+      "action": "Acción"
+    },
+    "empty": "Todavía no hay registros de riego"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "Modo de riego de emergencia",
+      "body": "Actualmente es de noche (22:00-5:00). ¿Está seguro de que desea regar ahora?"
+    }
+  },
+  "errors": {
+    "generic": "Se produjo un error. Inténtelo de nuevo.",
+    "network": "No se pudo conectar con el servidor.",
+    "validation": "Por favor, revise los datos introducidos."
+  },
+  "localeSwitcher": {
+    "label": "Idioma"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

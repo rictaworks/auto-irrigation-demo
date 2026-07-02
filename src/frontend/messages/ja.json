@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "灌水管理システム",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "sensor": "センサー入力",
+    "settings": "圃場設定",
+    "history": "灌水履歴"
+  },
+  "common": {
+    "save": "設定を保存",
+    "cancel": "キャンセル",
+    "submit": "判定を実行する",
+    "loading": "読み込み中...",
+    "close": "閉じる",
+    "confirm": "実行する"
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "soilMoisture": "土壌水分",
+    "soilScore": "土壌スコア",
+    "weatherCoefficient": "天気係数",
+    "weatherCondition": "天気条件",
+    "decisionLabel": "灌水判定",
+    "totalScore": "総合スコア",
+    "weatherGrid": {
+      "temperature": "気温",
+      "humidity": "湿度",
+      "rainfallToday": "当日降雨量",
+      "forecastRain": "24時間予報降雨量"
+    },
+    "recommendedAction": {
+      "title": "推奨アクション",
+      "volume": "推奨総水量",
+      "unitVolume": "単位水量",
+      "area": "圃場面積",
+      "soilType": "土壌種別",
+      "lastUpdated": "最終取得時刻"
+    },
+    "buttons": {
+      "updateSensor": "センサーを更新",
+      "recordIrrigation": "灌水を記録する"
+    },
+    "emptyState": {
+      "message": "まだセンサーデータが入力されていません",
+      "cta": "センサー入力へ"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "今すぐ灌水",
+    "recommended": "灌水推奨",
+    "watch": "様子見",
+    "none": "灌水不要"
+  },
+  "soilLabels": {
+    "critical": "危険（干ばつ寸前）",
+    "needs_irrigation": "要灌水",
+    "adequate": "適切",
+    "too_wet": "過湿気味",
+    "waterlogged": "過湿（根腐れリスク）"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "雨天中・灌水完全不要",
+    "forecast_rain_over_threshold": "雨予報・灌水見合わせ",
+    "hot_and_dry": "高温乾燥・蒸発量増大",
+    "cold": "低温・蒸発量低下",
+    "high_humidity": "高湿度・蒸発量抑制",
+    "standard": "標準条件"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "夕方(17:00)まで待機（葉焼けリスク）",
+    "emergency_confirm": "緊急灌水モード",
+    "execute_now": "今すぐ実行",
+    "next_morning": "翌朝6:00〜8:00を推奨",
+    "reevaluate_tomorrow": "明日の朝再評価",
+    "skip": "スキップ"
+  },
+  "soilTypes": {
+    "sandy_loam": "砂壌土",
+    "loam": "壌土",
+    "clay": "粘土質"
+  },
+  "sensorForm": {
+    "title": "センサー入力",
+    "soilMoisturePct": "土壌水分量 (%)",
+    "rainfallTodayMm": "当日降雨量 (mm)",
+    "forecastRainMm": "24時間予報降雨量 (mm)",
+    "temperatureC": "気温 (℃)",
+    "humidityPct": "湿度 (%)",
+    "submit": "判定を実行する",
+    "cancel": "キャンセル",
+    "success": "判定が完了しました"
+  },
+  "settingsForm": {
+    "title": "圃場設定",
+    "areaM2": "圃場面積 (m²)",
+    "soilType": "土壌種別",
+    "save": "設定を保存",
+    "cancel": "キャンセル",
+    "success": "設定を保存しました"
+  },
+  "history": {
+    "title": "灌水履歴",
+    "columns": {
+      "executedAt": "日時",
+      "decision": "判定",
+      "soilMoisture": "土壌水分",
+      "score": "スコア",
+      "volume": "推奨水量",
+      "action": "アクション"
+    },
+    "empty": "まだ灌水記録がありません"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "緊急灌水モード",
+      "body": "現在は夜間(22:00〜5:00)です。本当に今すぐ灌水を実行しますか？"
+    }
+  },
+  "errors": {
+    "generic": "エラーが発生しました。もう一度お試しください。",
+    "network": "サーバーに接続できませんでした。",
+    "validation": "入力内容を確認してください。"
+  },
+  "localeSwitcher": {
+    "label": "言語"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

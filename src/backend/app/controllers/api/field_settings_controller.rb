@@ -1,5 +1,10 @@
 module Api
   class FieldSettingsController < BaseController
+    def show
+      setting = current_session.field_settings.order(created_at: :desc).first
+      render json: setting && serialize(setting)
+    end
+
     def create
       check_honeypot!
 

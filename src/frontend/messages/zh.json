@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "灌溉管理系统",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "sensor": "传感器数据录入",
+    "settings": "地块设置",
+    "history": "灌溉记录"
+  },
+  "common": {
+    "save": "保存设置",
+    "cancel": "取消",
+    "submit": "执行判定",
+    "loading": "加载中...",
+    "close": "关闭",
+    "confirm": "确认执行"
+  },
+  "dashboard": {
+    "title": "仪表盘",
+    "soilMoisture": "土壤湿度",
+    "soilScore": "土壤评分",
+    "weatherCoefficient": "天气系数",
+    "weatherCondition": "天气状况",
+    "decisionLabel": "灌溉判定",
+    "totalScore": "综合评分",
+    "weatherGrid": {
+      "temperature": "气温",
+      "humidity": "湿度",
+      "rainfallToday": "当日降雨量",
+      "forecastRain": "24小时预报降雨量"
+    },
+    "recommendedAction": {
+      "title": "推荐操作",
+      "volume": "推荐总水量",
+      "unitVolume": "单位水量",
+      "area": "地块面积",
+      "soilType": "土壤类型",
+      "lastUpdated": "最后更新时间"
+    },
+    "buttons": {
+      "updateSensor": "更新传感器数据",
+      "recordIrrigation": "记录灌溉"
+    },
+    "emptyState": {
+      "message": "尚未录入传感器数据",
+      "cta": "前往传感器数据录入"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "立即灌溉",
+    "recommended": "建议灌溉",
+    "watch": "观察中",
+    "none": "无需灌溉"
+  },
+  "soilLabels": {
+    "critical": "危险（接近干旱）",
+    "needs_irrigation": "需要灌溉",
+    "adequate": "适宜",
+    "too_wet": "略偏湿",
+    "waterlogged": "过湿（有烂根风险）"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "正在下雨，无需灌溉",
+    "forecast_rain_over_threshold": "预报有雨，暂缓灌溉",
+    "hot_and_dry": "高温干燥，蒸发量增大",
+    "cold": "低温，蒸发量降低",
+    "high_humidity": "湿度较高，蒸发量受抑",
+    "standard": "标准条件"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "请等到傍晚（17:00）后再灌溉（存在灼叶风险）",
+    "emergency_confirm": "紧急灌溉模式",
+    "execute_now": "立即执行",
+    "next_morning": "建议明日6:00至8:00进行",
+    "reevaluate_tomorrow": "明日早上重新评估",
+    "skip": "跳过"
+  },
+  "soilTypes": {
+    "sandy_loam": "砂壤土",
+    "loam": "壤土",
+    "clay": "粘土"
+  },
+  "sensorForm": {
+    "title": "传感器数据录入",
+    "soilMoisturePct": "土壤湿度 (%)",
+    "rainfallTodayMm": "当日降雨量 (mm)",
+    "forecastRainMm": "24小时预报降雨量 (mm)",
+    "temperatureC": "气温 (℃)",
+    "humidityPct": "湿度 (%)",
+    "submit": "执行判定",
+    "cancel": "取消",
+    "success": "判定已完成"
+  },
+  "settingsForm": {
+    "title": "地块设置",
+    "areaM2": "地块面积 (m²)",
+    "soilType": "土壤类型",
+    "save": "保存设置",
+    "cancel": "取消",
+    "success": "设置已保存"
+  },
+  "history": {
+    "title": "灌溉记录",
+    "columns": {
+      "executedAt": "日期/时间",
+      "decision": "判定结果",
+      "soilMoisture": "土壤湿度",
+      "score": "评分",
+      "volume": "推荐水量",
+      "action": "操作"
+    },
+    "empty": "暂无灌溉记录"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "紧急灌溉模式",
+      "body": "当前为夜间时段（22:00至5:00）。确定要立即执行灌溉吗？"
+    }
+  },
+  "errors": {
+    "generic": "发生错误，请重试。",
+    "network": "无法连接到服务器。",
+    "validation": "请检查输入内容。"
+  },
+  "localeSwitcher": {
+    "label": "语言"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}
