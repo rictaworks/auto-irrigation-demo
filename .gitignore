@@ -9,30 +9,32 @@ WORK/
 app-ui/
 auto-irrigation-demo-spec.md
 
-# シークレット
-.env
-.env.*
-!.env.example
-config/master.key
-config/credentials/*.key
+# シークレット（src/backend, src/frontend 等ネストした場所にも適用されるよう ** を使用）
+**/.env
+**/.env.*
+!**/.env.example
+**/config/master.key
+**/config/credentials/*.key
 
 # Next.js
-node_modules/
-.next/
-out/
-.vercel/
+**/node_modules/
+**/.next/
+**/out/
+**/.vercel/
 
 # Rails
-/log/*
-!/log/.keep
-/tmp/*
-!/tmp/.keep
-/db/*.sqlite3
-/db/*.sqlite3-journal
-.bundle/
-vendor/bundle/
-/public/assets
-/public/packs
+**/log/*
+!**/log/.keep
+**/tmp/*
+!**/tmp/.keep
+**/db/*.sqlite3
+**/db/*.sqlite3-journal
+**/storage/*.sqlite3
+**/storage/*.sqlite3-journal
+**/.bundle/
+**/vendor/bundle/
+**/public/assets
+**/public/packs
 
 # OS
 .DS_Store

@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "نظام إدارة الري",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "sensor": "إدخال بيانات المستشعر",
+    "settings": "إعدادات الحقل",
+    "history": "سجل الري"
+  },
+  "common": {
+    "save": "حفظ الإعدادات",
+    "cancel": "إلغاء",
+    "submit": "تنفيذ التقييم",
+    "loading": "جارٍ التحميل...",
+    "close": "إغلاق",
+    "confirm": "تأكيد التنفيذ"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "soilMoisture": "رطوبة التربة",
+    "soilScore": "درجة التربة",
+    "weatherCoefficient": "معامل الطقس",
+    "weatherCondition": "حالة الطقس",
+    "decisionLabel": "قرار الري",
+    "totalScore": "الدرجة الإجمالية",
+    "weatherGrid": {
+      "temperature": "درجة الحرارة",
+      "humidity": "الرطوبة",
+      "rainfallToday": "هطول الأمطار اليوم",
+      "forecastRain": "توقعات الأمطار خلال 24 ساعة"
+    },
+    "recommendedAction": {
+      "title": "الإجراء الموصى به",
+      "volume": "الكمية الإجمالية الموصى بها",
+      "unitVolume": "الكمية لكل م²",
+      "area": "مساحة الحقل",
+      "soilType": "نوع التربة",
+      "lastUpdated": "آخر تحديث"
+    },
+    "buttons": {
+      "updateSensor": "تحديث بيانات المستشعر",
+      "recordIrrigation": "تسجيل عملية الري"
+    },
+    "emptyState": {
+      "message": "لم يتم إدخال بيانات المستشعر بعد",
+      "cta": "الانتقال إلى إدخال بيانات المستشعر"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "الري الآن",
+    "recommended": "يُنصح بالري",
+    "watch": "قيد المراقبة",
+    "none": "لا حاجة للري"
+  },
+  "soilLabels": {
+    "critical": "حرج (قريب من الجفاف)",
+    "needs_irrigation": "بحاجة إلى الري",
+    "adequate": "مناسب",
+    "too_wet": "رطب أكثر من اللازم قليلاً",
+    "waterlogged": "مشبع بالماء (خطر تعفن الجذور)"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "الأمطار هاطلة الآن - لا حاجة للري",
+    "forecast_rain_over_threshold": "من المتوقع هطول أمطار - تأجيل الري",
+    "hot_and_dry": "حار وجاف - زيادة التبخر",
+    "cold": "بارد - انخفاض التبخر",
+    "high_humidity": "رطوبة عالية - تبخر منخفض",
+    "standard": "ظروف عادية"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "الانتظار حتى المساء (17:00) - خطر احتراق الأوراق",
+    "emergency_confirm": "وضع الري الطارئ",
+    "execute_now": "التنفيذ الآن",
+    "next_morning": "يُنصح به غدًا من الساعة 6:00 إلى 8:00 صباحًا",
+    "reevaluate_tomorrow": "إعادة التقييم صباح الغد",
+    "skip": "تخطي"
+  },
+  "soilTypes": {
+    "sandy_loam": "تربة رملية طينية",
+    "loam": "تربة طينية معتدلة",
+    "clay": "تربة طينية"
+  },
+  "sensorForm": {
+    "title": "إدخال بيانات المستشعر",
+    "soilMoisturePct": "رطوبة التربة (%)",
+    "rainfallTodayMm": "هطول الأمطار اليوم (مم)",
+    "forecastRainMm": "توقعات الأمطار خلال 24 ساعة (مم)",
+    "temperatureC": "درجة الحرارة (°م)",
+    "humidityPct": "الرطوبة (%)",
+    "submit": "تنفيذ التقييم",
+    "cancel": "إلغاء",
+    "success": "اكتمل التقييم"
+  },
+  "settingsForm": {
+    "title": "إعدادات الحقل",
+    "areaM2": "مساحة الحقل (م²)",
+    "soilType": "نوع التربة",
+    "save": "حفظ الإعدادات",
+    "cancel": "إلغاء",
+    "success": "تم حفظ الإعدادات"
+  },
+  "history": {
+    "title": "سجل الري",
+    "columns": {
+      "executedAt": "التاريخ/الوقت",
+      "decision": "القرار",
+      "soilMoisture": "رطوبة التربة",
+      "score": "الدرجة",
+      "volume": "الكمية الموصى بها",
+      "action": "الإجراء"
+    },
+    "empty": "لا توجد سجلات ري حتى الآن"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "وضع الري الطارئ",
+      "body": "الوقت الآن ليلاً (22:00-5:00). هل أنت متأكد من رغبتك في الري الآن؟"
+    }
+  },
+  "errors": {
+    "generic": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "network": "تعذر الاتصال بالخادم.",
+    "validation": "يرجى التحقق من البيانات المدخلة."
+  },
+  "localeSwitcher": {
+    "label": "اللغة"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

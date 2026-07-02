@@ -1,0 +1,139 @@
+{
+  "app": {
+    "title": "Irrigation Management System",
+    "subtitle": "Auto-Irrigation Demo"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "sensor": "Sensor Input",
+    "settings": "Field Settings",
+    "history": "Irrigation History"
+  },
+  "common": {
+    "save": "Save Settings",
+    "cancel": "Cancel",
+    "submit": "Run Assessment",
+    "loading": "Loading...",
+    "close": "Close",
+    "confirm": "Proceed"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "soilMoisture": "Soil Moisture",
+    "soilScore": "Soil Score",
+    "weatherCoefficient": "Weather Coefficient",
+    "weatherCondition": "Weather Condition",
+    "decisionLabel": "Irrigation Decision",
+    "totalScore": "Total Score",
+    "weatherGrid": {
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "rainfallToday": "Rainfall Today",
+      "forecastRain": "24h Forecast Rain"
+    },
+    "recommendedAction": {
+      "title": "Recommended Action",
+      "volume": "Recommended Total Volume",
+      "unitVolume": "Volume per m²",
+      "area": "Field Area",
+      "soilType": "Soil Type",
+      "lastUpdated": "Last Updated"
+    },
+    "buttons": {
+      "updateSensor": "Update Sensor",
+      "recordIrrigation": "Record Irrigation"
+    },
+    "emptyState": {
+      "message": "No sensor data has been entered yet",
+      "cta": "Go to Sensor Input"
+    }
+  },
+  "decisionLevels": {
+    "immediate": "Irrigate Now",
+    "recommended": "Irrigation Recommended",
+    "watch": "Watch",
+    "none": "No Irrigation Needed"
+  },
+  "soilLabels": {
+    "critical": "Critical (Near Drought)",
+    "needs_irrigation": "Needs Irrigation",
+    "adequate": "Adequate",
+    "too_wet": "Slightly Waterlogged",
+    "waterlogged": "Waterlogged (Root Rot Risk)"
+  },
+  "weatherReasons": {
+    "rain_today_over_threshold": "Raining now - irrigation unnecessary",
+    "forecast_rain_over_threshold": "Rain forecast - hold off irrigation",
+    "hot_and_dry": "Hot and dry - increased evaporation",
+    "cold": "Cold - reduced evaporation",
+    "high_humidity": "High humidity - suppressed evaporation",
+    "standard": "Standard conditions"
+  },
+  "scheduleActions": {
+    "wait_until_evening": "Wait until evening (17:00) - risk of leaf scorch",
+    "emergency_confirm": "Emergency irrigation mode",
+    "execute_now": "Execute now",
+    "next_morning": "Recommended 6:00-8:00 tomorrow morning",
+    "reevaluate_tomorrow": "Re-evaluate tomorrow morning",
+    "skip": "Skip"
+  },
+  "soilTypes": {
+    "sandy_loam": "Sandy Loam",
+    "loam": "Loam",
+    "clay": "Clay"
+  },
+  "sensorForm": {
+    "title": "Sensor Input",
+    "soilMoisturePct": "Soil Moisture (%)",
+    "rainfallTodayMm": "Rainfall Today (mm)",
+    "forecastRainMm": "24h Forecast Rain (mm)",
+    "temperatureC": "Temperature (°C)",
+    "humidityPct": "Humidity (%)",
+    "submit": "Run Assessment",
+    "cancel": "Cancel",
+    "success": "Assessment complete"
+  },
+  "settingsForm": {
+    "title": "Field Settings",
+    "areaM2": "Field Area (m²)",
+    "soilType": "Soil Type",
+    "save": "Save Settings",
+    "cancel": "Cancel",
+    "success": "Settings saved"
+  },
+  "history": {
+    "title": "Irrigation History",
+    "columns": {
+      "executedAt": "Date/Time",
+      "decision": "Decision",
+      "soilMoisture": "Soil Moisture",
+      "score": "Score",
+      "volume": "Recommended Volume",
+      "action": "Action"
+    },
+    "empty": "No irrigation records yet"
+  },
+  "modal": {
+    "emergencyIrrigation": {
+      "title": "Emergency Irrigation Mode",
+      "body": "It is currently nighttime (22:00-5:00). Are you sure you want to irrigate now?"
+    }
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again.",
+    "network": "Could not connect to the server.",
+    "validation": "Please check your input."
+  },
+  "localeSwitcher": {
+    "label": "Language"
+  },
+  "localeNames": {
+    "ja": "日本語",
+    "en": "English",
+    "fr": "Français",
+    "zh": "中文",
+    "ru": "Русский",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}
