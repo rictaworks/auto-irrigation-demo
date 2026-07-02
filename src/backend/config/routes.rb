@@ -7,4 +7,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :api do
+    get "session", to: "sessions#show"
+    post "field_settings", to: "field_settings#create"
+    post "sensor", to: "sensor_readings#create"
+    post "irrigate", to: "irrigations#create"
+    get "irrigation_logs", to: "irrigation_logs#index"
+  end
 end
