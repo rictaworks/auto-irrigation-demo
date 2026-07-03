@@ -36,5 +36,8 @@ auto-irrigation-demo-spec.md
 **/public/assets
 **/public/packs
 
+# ESP32 secrets
+firmware/**/secrets.h
+
 # OS
 .DS_Store
