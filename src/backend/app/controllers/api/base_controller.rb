@@ -46,7 +46,10 @@ module Api
       cookies.signed[SESSION_COOKIE_KEY] = {
         value: session_id,
         httponly: true,
-        same_site: :strict,
+        # フロント（*.rictaworks.jp）とAPI（*.up.railway.app）はクロスサイトのため、
+        # 本番では SameSite=None + Secure でないとセッションCookieが送信されない。
+        # 開発（同一オリジンhttp）では None+Secure が使えないため Lax にフォールバックする。
+        same_site: Rails.env.production? ? :none : :lax,
         secure: Rails.env.production?
       }
     end
